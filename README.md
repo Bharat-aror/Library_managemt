@@ -48,7 +48,32 @@ This project demonstrates the implementation of a Library Management System usin
 - Data Analysis using SQL
 
 ---
+## How to Run (PostgreSQL)
 
+### 1) Create database
+```bash
+createdb library_db
+```
+
+### 2) Run the SQL script
+```bash
+psql -d library_db -f lib.sql
+```
+
+### 3) Import CSV data (optional)
+From inside `psql`:
+```sql
+\copy branch FROM 'branch.csv' WITH (FORMAT csv, HEADER true);
+\copy employees FROM 'employees.csv' WITH (FORMAT csv, HEADER true);
+\copy books FROM 'books.csv' WITH (FORMAT csv, HEADER true);
+\copy members FROM 'members.csv' WITH (FORMAT csv, HEADER true);
+\copy issue_books FROM 'issued_status.csv' WITH (FORMAT csv, HEADER true);
+\copy return_st FROM 'return_status.csv' WITH (FORMAT csv, HEADER true);
+```
+
+> Note: If your CSV files do not contain headers, replace `HEADER true` with `HEADER false`
+and provide explicit column lists.
+---
 ## 👨‍💻 Author
 Bharat Arora  
 MSc Data Science Student
