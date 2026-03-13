@@ -4,6 +4,8 @@
 This project demonstrates the implementation of a Library Management System using SQL and PostgreSQL. It focuses on database design, data manipulation, and advanced querying techniques. The system manages book issuance, returns, member records, employees, and branch operations.
 
 ---
+## ER Diagram
+<img width="1557" height="803" alt="image" src="https://github.com/user-attachments/assets/420f569f-e1d4-434a-ab85-5521d60710bd" />
 
 ##  Objectives
 
