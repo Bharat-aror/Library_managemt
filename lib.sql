@@ -315,12 +315,7 @@ ON emp.branch_id = b.branch_id
 GROUP BY 1,3;
 
 /*Objective: Create a stored procedure to manage the status of books in a library system. 
-Description: Write a stored procedure that updates the status of a book in the library based on its issuance.
-The procedure should function as follows: The stored procedure should take the book_id as an input parameter.
-The procedure should first check if the book is available (status = 'yes'). 
-If the book is available, it should be issued, and the status in the books table should be updated to 'no'. 
-If the book is not available (status = 'no'), the procedure should return an error
-message indicating that the book is currently not available.*/
+*/
 
 
 CREATE OR REPLACE PROCEDURE issue_bookss(p_issued_id VARCHAR(10), p_issued_member_id VARCHAR(30), p_issued_book_isbn VARCHAR(30), p_issued_emp_id VARCHAR(10))
